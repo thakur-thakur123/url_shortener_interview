@@ -63,8 +63,7 @@ Follow these steps to run the project on your computer.
 Open your terminal and run:
 
 ``` bash
-git clone <this-repo-url> url_shortener_interview
-```
+git clone https://github.com/thakur-thakur123/url_shortener_interview.git
 
 Now go inside the project folder:
 
