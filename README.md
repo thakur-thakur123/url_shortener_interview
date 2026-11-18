@@ -38,8 +38,7 @@ There are three main roles in this project.
 -   Can see only the URLs created by themselves.
 -   Cannot invite other users.
 
-**Note:** Sales and Manager roles are present in the Role enum, but they
-do not have any special permissions in this project.
+
 
 Anyone can open a short URL without logging in. There is no public
 signup page. New users can join only through an invitation link.
@@ -55,11 +54,6 @@ Before running the project, make sure these are installed:
 -   MySQL 8 or MariaDB 10.4+
 -   Git
 
-The following PHP extensions are also required:
-
-`pdo_mysql`, `mbstring`, `openssl`, `tokenizer`, `xml`, `ctype`,
-`fileinfo`
-
 ## Project Setup
 
 Follow these steps to run the project on your computer.
@@ -69,13 +63,13 @@ Follow these steps to run the project on your computer.
 Open your terminal and run:
 
 ``` bash
-git clone <this-repo-url> url_shortener_interview
+git clone <this-repo-url> url-shortener
 ```
 
 Now go inside the project folder:
 
 ``` bash
-cd url_shortener_interview
+cd url-shortener
 ```
 
 ### Step 2: Install packages
@@ -182,7 +176,7 @@ change them, add your own values in the `.env` file before running the seeder:
 
 ``` env
 SUPERADMIN_NAME=Super Admin
-SUPERADMIN_EMAIL=superadmin@gamil.com
+SUPERADMIN_EMAIL=superadmin@gmail.com
 SUPERADMIN_PASSWORD=Test@123
 ```
 
@@ -260,9 +254,6 @@ php artisan test
 
 The tests use an in-memory SQLite database. They do not change your
 MySQL database.
-
-Make sure the `pdo_sqlite` PHP extension is enabled before running the
-tests.
 
 The tests check:
 
@@ -350,3 +341,19 @@ php artisan migrate:fresh --seed
 **Note:** This command deletes existing tables and their data before
 creating them again. Use it only when you are okay with resetting the
 database.
+
+## AI Usage
+
+I used Claude (Anthropic) as a helper while working on this project. It helped me plan the work, understand the requirements, prepare some initial code drafts, and organize the setup steps.
+
+I used Laravel Breeze for the login, logout, and password reset features.
+
+My work on the project included:
+- Setting up the Laravel project and database.
+- Reviewing the code and understanding how the main features work.
+- Checking the invitation process for SuperAdmin, Admin, and Member.
+- Checking short URL creation, URL listing, and public redirects.
+- Running the application and tests, and checking issues found during setup.
+
+AI was used as a support tool. I reviewed the code and tested the application as part of the development process.
+
