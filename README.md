@@ -63,13 +63,13 @@ Follow these steps to run the project on your computer.
 Open your terminal and run:
 
 ``` bash
-git clone <this-repo-url> url-shortener
+git clone <this-repo-url> url_shortener_interview
 ```
 
 Now go inside the project folder:
 
 ``` bash
-cd url-shortener
+cd url_shortener_interview
 ```
 
 ### Step 2: Install packages
